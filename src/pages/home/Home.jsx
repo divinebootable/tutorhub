@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import Featured from "../../components/featured/Featured";
 import TrustedBy from "../../components/trustedBy/TrustedBy";
+import How from "../../components/how/How";
 // import Slide from "../../components/slide/Slide";
 // import CatCard from "../../components/catCard/CatCard";
 // import ProjectCard from "../../components/projectCard/ProjectCard";
@@ -71,16 +72,24 @@ function Home() {
         </div>
       </div>
       <div className="How">
-        <h1>How Tutor Hub works:</h1>
+        <h1>How Tutor Hub works</h1>
         <div className="container">
-          <div className="Find">
-            <h3> Find Tutor</h3>
-          </div>
-          <div className="start">
-            <h3>Book Lesson</h3>
-          </div>
-          <div className="speak">
-            <h3>Start Learning</h3>
+          <div className="cards">
+            <How
+              title="Find Tutor"
+              description="This is the decription for card 1"
+              image="https://via.placeholder/com/300"
+            />
+            <How
+              title="Book Lesson"
+              description="This is the decription for card 1"
+              image="https://via.placeholder/com/300"
+            />
+            <How
+              title="Start Learning"
+              description="This is the decription for card 1"
+              image="https://via.placeholder/com/300"
+            />
           </div>
         </div>
       </div>
