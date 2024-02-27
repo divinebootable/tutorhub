@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Gig from "./pages/gig/Gig";
 import Gigs from "./pages/gigs/Gigs";
+import Orders from "./pages/orders/Orders";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 
@@ -33,6 +34,10 @@ function App() {
         {
           path: "/gigs",
           element: <Gigs />,
+        },
+        {
+          path: "/bookedlessons",
+          element: <Orders />,
         },
       ],
     },

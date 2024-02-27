@@ -44,7 +44,7 @@ function Footer() {
             <span>Community Standards</span>
           </div>
           <div className="item">
-            <h2>More From Barah</h2>
+            <h2>More From Tutor Hub</h2>
             <span>Barah Pro</span>
             <span>Barah Pro</span>
             <span>Barah Guides</span>
@@ -52,7 +52,6 @@ function Footer() {
             <span>ClearVoice</span>
             <span>Barah Workspace</span>
             <span>Learn</span>
-            <span>Working Not Working</span>
           </div>
         </div>
         <hr />
