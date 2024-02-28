@@ -77,18 +77,18 @@ function Home() {
           <div className="cards">
             <How
               title="Find Tutor"
-              description="This is the decription for card 1"
-              image="https://via.placeholder/com/300"
+              description="We’ll connect you with a tutor who will motivate andchallenge you."
+              image="https://logoarena-storage.s3.amazonaws.com/contests/public/6611/360_1451830900_1.png"
             />
             <How
               title="Book Lesson"
-              description="This is the decription for card 1"
-              image="https://via.placeholder/com/300"
+              description="Select a date and time "
+              image="https://img.freepik.com/free-vector/english-book-illustration-design_23-2149502858.jpg"
             />
             <How
               title="Start Learning"
-              description="This is the decription for card 1"
-              image="https://via.placeholder/com/300"
+              description="Your tutor will guide the way through your first lesson and help you plan your next steps"
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8BO73otSnhOgEsTcvaaBO6q3jLRiEutbWQ&usqp=CAU"
             />
           </div>
         </div>
