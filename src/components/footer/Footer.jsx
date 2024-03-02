@@ -45,12 +45,12 @@ function Footer() {
           </div>
           <div className="item">
             <h2>More From Tutor Hub</h2>
-            <span>Barah Pro</span>
-            <span>Barah Pro</span>
-            <span>Barah Guides</span>
+            <span>Tutor Hub Pro</span>
+            <span>Tutor Hub Pro</span>
+            <span>Tutor Hub Guides</span>
             <span>Get Inspired</span>
             <span>ClearVoice</span>
-            <span>Barah Workspace</span>
+            <span>Tutor Hub Workspace</span>
             <span>Learn</span>
           </div>
         </div>

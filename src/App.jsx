@@ -4,7 +4,9 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Gig from "./pages/gig/Gig";
 import Gigs from "./pages/gigs/Gigs";
+import MyGigs from "./pages/myGigs/MyGigs";
 import Orders from "./pages/orders/Orders";
+import Message from "./pages/message/Message";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 
@@ -28,16 +30,24 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/gig/:id",
+          path: "/lesson/123",
           element: <Gig />,
         },
         {
-          path: "/gigs",
+          path: "/mylessons",
+          element: <MyGigs />,
+        },
+        {
+          path: "/lessons",
           element: <Gigs />,
         },
         {
           path: "/bookedlessons",
           element: <Orders />,
+        },
+        {
+          path: "/inbox",
+          element: <Message />,
         },
       ],
     },

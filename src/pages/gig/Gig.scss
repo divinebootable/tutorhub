@@ -21,7 +21,12 @@
         color: #555;
       }
 
-      h1 {
+      .list ul{
+        li{
+          color: #555;
+          text-transform: uppercase;
+          display: flex;
+        }
       }
 
       .user {
@@ -78,7 +83,7 @@
       }
 
       .seller {
-        margin-top: 50px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -122,6 +127,7 @@
               border-radius: 5px;
               border: 1px solid gray;
               padding: 10px;
+              cursor: pointer;
             }
           }
         }
@@ -146,6 +152,13 @@
 
               .title {
                 font-weight: 300;
+              }
+              button {
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid gray;
+                padding: 10px;
+                cursor: pointer;
               }
             }
           }
