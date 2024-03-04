@@ -25,74 +25,72 @@ const Navbar = () => {
   };
 
   return (
-    <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
-      <div className="container">
-        <div className="logo">
-          <Link to="/" className="link">
-            <span className="text">Tutor Hub</span>
-          </Link>
-          <span className="dot">.</span>
-        </div>
-        <div className="links">
-          <Link to="/lessons" className="link">
-            Find tutors
-          </Link>
-          <span className="text">Explore</span>
-          {!currentUser?.isSeller && (
-            <span className="text">Become a tutor</span>
-          )}
-          <Link to="/login" className="link">
-            Sign In
-          </Link>
-          {!currentUser && <button>Join</button>}
-          {currentUser && (
-            <div className="user" onClick={() => setOpen(!open)}>
-              <img
-                src="https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
-              />
-              <span>{currentUser?.username}</span>
-              {open && (
-                <div className="options">
-                  {currentUser?.isSeller && (
-                    <>
-                      <Link className="link" to="/mylessons">
-                        Lessons
-                      </Link>
-                      <Link className="link" to="/addlesson">
-                        Add New Lesson
-                      </Link>
-                    </>
-                  )}
-                  <Link className="link" to="/bookings">
-                    Bookings
-                  </Link>
-                  <Link className="link" to="/messages">
-                    Messages
-                  </Link>
-                  <Link className="link" to="/logout">
-                    Log Out
-                  </Link>
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-      </div>
-      {(active || pathname !== "/") && (
-        <>
-          <hr />
-          <div className="menu">
-            <span>Englisn Covsersational classes</span>
-            <span>Business english lessons</span>
-            <span>Online english Grammar lessons</span>
-            <span>English Speeking Courses</span>
-            <span>Online English Lessons for Beginners</span>
-            <span>Advanced English classes</span>
+    <>
+      <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
+        <div className="container">
+          <div className="logo">
+            <Link to="/" className="link">
+              <span className="text">Tutor Hub</span>
+            </Link>
+            <span className="dot">.</span>
           </div>
-        </>
-      )}
-    </div>
+          <div className="links">
+            <span className="text">Find tutors</span>
+            <span className="text">Explore</span>
+            {!currentUser?.isSeller && (
+              <span className="text">Become a tutor</span>
+            )}
+            <span className="text">Sign In</span>
+            {!currentUser && <button>Join</button>}
+            {currentUser && (
+              <div className="user" onClick={() => setOpen(!open)}>
+                <img
+                  src="https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  alt=""
+                />
+                <span>{currentUser?.username}</span>
+                {open && (
+                  <div className="options">
+                    {currentUser?.isSeller && (
+                      <>
+                        <Link className="link" to="/lessons">
+                          Lessons
+                        </Link>
+                        <Link className="link" to="/addlesson">
+                          Add New Lesson
+                        </Link>
+                      </>
+                    )}
+                    <Link className="link" to="/bookings">
+                      Bookings
+                    </Link>
+                    <Link className="link" to="/messages">
+                      Messages
+                    </Link>
+                    <Link className="link" to="/logout">
+                      Log Out
+                    </Link>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+        {(active || pathname !== "/") && (
+          <>
+            <hr />
+            <div className="menu">
+              <span>Englisn Covsersational classes</span>
+              <span>Business english lessons</span>
+              <span>Online english Grammar lessons</span>
+              <span>English Speeking Courses</span>
+              <span>Online English Lessons for Beginners</span>
+              <span>Advanced English classes</span>
+            </div>
+          </>
+        )}
+      </div>
+    </>
   );
 };
 
