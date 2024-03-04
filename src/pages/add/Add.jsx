@@ -5,7 +5,7 @@ const Add = () => {
   return (
     <div className="add">
       <div className="container">
-        <h1>Add New Gig</h1>
+        <h1>Add New Lesson</h1>
         <div className="sections">
           <div className="info">
             <label htmlFor="">Title</label>

@@ -34,12 +34,16 @@ const Navbar = () => {
           <span className="dot">.</span>
         </div>
         <div className="links">
-          <span className="text">Find tutors</span>
+          <Link to="/lessons" className="link">
+            Find tutors
+          </Link>
           <span className="text">Explore</span>
           {!currentUser?.isSeller && (
             <span className="text">Become a tutor</span>
           )}
-          <span className="text">Sign In</span>
+          <Link to="/login" className="link">
+            Sign In
+          </Link>
           {!currentUser && <button>Join</button>}
           {currentUser && (
             <div className="user" onClick={() => setOpen(!open)}>
@@ -52,7 +56,7 @@ const Navbar = () => {
                 <div className="options">
                   {currentUser?.isSeller && (
                     <>
-                      <Link className="link" to="/lessons">
+                      <Link className="link" to="/mylessons">
                         Lessons
                       </Link>
                       <Link className="link" to="/addlesson">

@@ -7,6 +7,10 @@ import Gigs from "./pages/gigs/Gigs";
 import MyGigs from "./pages/myGigs/MyGigs";
 import Orders from "./pages/orders/Orders";
 import Message from "./pages/message/Message";
+import Messages from "./pages/messages/Messages";
+import Add from "./pages/add/Add";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 
@@ -42,12 +46,28 @@ function App() {
           element: <Gigs />,
         },
         {
-          path: "/bookedlessons",
+          path: "/bookings",
           element: <Orders />,
         },
         {
-          path: "/inbox",
+          path: "/message/123",
           element: <Message />,
+        },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
+        {
+          path: "/addlesson",
+          element: <Add />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
       ],
     },
